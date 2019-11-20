@@ -1,7 +1,7 @@
 import unittest
 from Orange.widgets.tests.base import WidgetTest
 
-from orangecontrib.example.widgets.mywidget import MyWidget
+from orangecontrib.scoring.widgets.mywidget import MyWidget
 
 
 class ExampleTests(unittest.TestCase):
