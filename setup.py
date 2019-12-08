@@ -5,14 +5,14 @@ from os import path, walk
 import sys
 from setuptools import setup, find_packages
 
-NAME = "Orange3 Scoring"
+NAME = "orange3-scoring"
 
 VERSION = "0.0.1"
 
-DESCRIPTION = "Add-on containing scoring engine widgets for PFA, PMML and ONNX"
+DESCRIPTION = "Add-on containing scoring engine widgets for PFA, PMML and ONNX models"
 LONG_DESCRIPTION = open(path.join(path.dirname(__file__), 'README.md')).read()
 
-LICENSE = "BSD"
+LICENSE = "MIT"
 
 KEYWORDS = (
     # [PyPi](https://pypi.python.org) packages with keyword "orange3 add-on"
@@ -20,6 +20,9 @@ KEYWORDS = (
     'orange3 add-on',
     'scoring',
     'inference',
+    'pfa',
+    'pmml',
+    'onnx',
 )
 
 PACKAGES = find_packages()
@@ -35,6 +38,8 @@ DATA_FILES = [
 
 INSTALL_REQUIRES = [
     'Orange3',
+    'titus2',
+    'pypmml',
 ]
 
 ENTRY_POINTS = {
