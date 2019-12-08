@@ -1,0 +1,7 @@
+{
+    "input": "double",
+    "output": "double",
+    "action": [
+      {"+": ["input", 100]}
+    ]
+}
