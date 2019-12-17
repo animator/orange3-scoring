@@ -1,0 +1,24 @@
+{
+    "input": {"type": "record",
+              "name": "Iris",
+              "fields": [
+                  {"name": "sepal_length_cm", "type": "double"},
+                  {"name": "sepal_width_cm", "type": "double"},
+                  {"name": "petal_length_cm", "type": "double"},
+                  {"name": "petal_width_cm", "type": "double"}
+              ]},
+    "output": "string",
+    "action": [
+        {"if": {"<": ["input.petal_length_cm", 2.5]},
+         "then": {"string": "Iris-setosa"},
+         "else":
+             {"if": {"<": ["input.petal_length_cm", 4.8]},
+              "then": {"string": "Iris-versicolor"},
+              "else":
+                  {"if": {"<": ["input.petal_width_cm", 1.7]},
+                  "then": {"string": "Iris-versicolor"},
+                  "else": {"string": "Iris-virginica"}}
+             }
+        }
+    ]
+}
