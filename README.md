@@ -1,36 +1,39 @@
-Orange3 Example Add-on
+Orange3 Scoring
 ======================
 
-This is an example add-on for [Orange3](http://orange.biolab.si). Add-on can extend Orange either 
-in scripting or GUI part, or in both. We here focus on the GUI part and implement a simple (empty) widget,
-register it with Orange and add a new workflow with this widget to example tutorials.
+This is an scoring/inference add-on for [Orange3](http://orange.biolab.si). This add-on adds widgets to
+load [PMML](http://dmg.org/pmml/v4-4/GeneralStructure.html) and [PFA](http://dmg.org/pfa/index.html) models 
+and score data.
+
+## Dependencies
+To use PMML models make sure you have Java installed:
+ - Java >= 1.8
+ - pypmml (downloaded during installation)
+
+To use PFA models:
+ - titus2 (downloaded during installation)
 
 Installation
 ------------
 
-To install the add-on, run
-
-    pip install .
-
+To install the add-on using pip, run
+```
+    pip install orange3-scoring
+```
 To register this add-on with Orange, but keep the code in the development directory (do not copy it to 
 Python's site-packages directory), run
-
+```
     pip install -e .
-
-Documentation / widget help can be built by running
-
-    make html htmlhelp
-
-from the doc directory.
+```
 
 Usage
 -----
 
 After the installation, the widget from this add-on is registered with Orange. To run Orange from the terminal,
 use
-
+```
     python -m Orange.canvas
-
+```
 The new widget appears in the toolbox bar under the section Example.
 
-![screenshot](https://github.com/biolab/orange3-example-addon/blob/master/screenshot.png)
+![screenshot](https://github.com/animator/orange3-scoring/blob/master/screens/screenshot.png)
