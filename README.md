@@ -28,6 +28,18 @@ Python's site-packages directory), run
 pip install -e .
 ```
 
+Issues, Questions and Feature Requests
+--------------------------------------
+
+Please raise an issue/question/request [here](https://github.com/animator/orange3-scoring/issues).
+
+Development
+-----------
+
+Want to contribute? Great!
+
+Please raise an [issue](https://github.com/animator/orange3-scoring/issues) to discuss your ideas and send a [pull request](https://github.com/animator/orange3-scoring/pulls).
+
 Usage
 -----
 
@@ -79,16 +91,3 @@ View the results. You can see the predicted class for iris as provided by the PF
 Another output signal is produced which contains the `Evaluation Results` which can be connected to `Confusion Matrix`, `ROC Analysis` and `Lift Curve` widgets. We can connect it to the `Confusion Matrix` widget to view the difference in predicted and actual results.
 
 ![11_view_confusion](https://github.com/animator/orange3-scoring/blob/master/screens/11_view_confusion.PNG)
-
-
-Issues, Questions and Feature Requests
---------------------------------------
-
-Please raise an issue/question/request [here](https://github.com/animator/orange3-scoring/issues).
-
-Development
------------
-
-Want to contribute? Great!
-
-Please raise an [issue](https://github.com/animator/orange3-scoring/issues) to discuss your ideas and send a [pull request](https://github.com/animator/orange3-scoring/pulls).
